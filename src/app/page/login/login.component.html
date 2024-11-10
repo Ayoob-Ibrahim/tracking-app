@@ -1,0 +1,22 @@
+<body>
+    <div class="wrapper">
+        <div class="inner">
+            <form [formGroup]="loginform" (ngSubmit)="onSubmit()">
+                <h3>LOGIN FORM</h3>
+                <div class="form-wrapper">
+                    <label for="">Company ID</label>
+                    <input type="text" class="form-control" formControlName="corpid">
+                </div>
+                <div class="form-wrapper">
+                    <label for="">Username</label>
+                    <input type="text" class="form-control" formControlName="username">
+                </div>
+                <div class="form-wrapper">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" formControlName="password">
+                </div>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+</body>

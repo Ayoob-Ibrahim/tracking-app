@@ -1,0 +1,43 @@
+.container-fluid {
+    overflow-y: auto;
+    height: 100dvh;
+    .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .row {
+        margin: 0 -5px;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @media (min-width: 1200px) and (min-width: 992px) {
+        .column {
+            width: 25%;
+            display: block;
+        }
+    }
+    @media (min-width: 860px) and (max-width: 1199px) {
+        .column {
+            width: 33%;
+            display: block;
+        }
+    }
+    @media (max-width: 859px) {
+        .column {
+            width: 50%;
+            display: block;
+        }
+    }
+    @media screen and (max-width: 560px) {
+        .column {
+            width: 95%;
+            display: block;
+            margin: 20px auto;
+        }
+    }
+}

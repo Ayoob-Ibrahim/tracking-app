@@ -1,0 +1,9 @@
+<div class="container-fluid">
+    <div class="row">
+        <ng-container *ngFor="let data of liveData  | keyvalue">
+            <div class="column">
+                <app-gridcard [griddata]="data"></app-gridcard>
+            </div>
+        </ng-container>
+    </div>
+</div>

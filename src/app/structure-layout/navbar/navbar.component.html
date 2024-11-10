@@ -1,0 +1,16 @@
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="bi bi-list"></i>
+    </label>
+    <label class="logo">{{companyId.toLocaleUpperCase()}}</label>
+    <ul>
+        <ng-container *ngFor="let data of MenuList">
+            <li>
+                <a [routerLink]="data.url" routerLinkActive="active">
+                    <i [ngClass]="data.icon"></i> {{data.label| uppercase }}
+                </a>
+            </li>
+        </ng-container>
+    </ul>
+</nav>

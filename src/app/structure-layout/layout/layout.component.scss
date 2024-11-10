@@ -1,0 +1,13 @@
+$bodywidth: 100vw;
+.body-content {
+    header {
+        height: 80px;
+        width: $bodywidth;
+    }
+    section {
+        height: calc(100vh - 80px);
+        width: $bodywidth;
+    }
+    background-image: url(../../../assets/loginpage/gps/space_earth.jpg);
+    overflow: hidden;
+}
